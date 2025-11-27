@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(78, 74, 74);
+    background-color: rgb(181, 174, 174);
 }
 
 .head {
@@ -48,4 +48,31 @@ body {
 }
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
+}
+.b1{
+width: 100px;
+  cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(255, 254, 254, 0.2);
+}
+.b1:hover{
+  opacity: 0.5;
+  
+}
+
+.scroll-container {
+  width: 100%; /* Or a specific width like 300px */
+  overflow: hidden; /* Hides text outside the container */
+  white-space: nowrap; /* Keeps all text on a single line */
+  box-sizing: border-box;
+  animation: scroll-left 10s linear infinite; /* Apply the animation */
+}
+
+/* Define the animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Start position: off-screen right */
+  }
+  100% {
+    transform: translateX(-100%); /* End position: off-screen left */
+  }
 }

@@ -11,27 +11,31 @@
 
 </head>
 <body>
-    <div id="navbar"></div>
-
-    <div><button onclick="sayHi()">Say Hi</button></div>
-        <script>
-        function sayHi(){
-        var name_full = "Dew" //ห้ามใช้ตัวแปรชื่อ name เพราะค่ามันไปชนกับ window.name จะทำให้ type มันเพี้ยนได้
-        for (let i=0;i<2;i++){
-            console.log("Hello"+name_full)
-            alert("Hi"+(i+1)+name_full)
-        }
-        name_full = 900
-        alert(typeof(name_full))
-        name_full = name_full + 1
-        console.log(name_full)
-        console.log(typeof(name_full))
-        }
-        
-        
-    </script>
-    <div></div>
-    <div></div>
+    <div id="navbar" style="margin-bottom: 30px"></div>
+    <hr style="color: aliceblue;">
+    <div><img src="/pic_for_tomkai/jesica_cute01.jpg" alt=""
+        class="b1"
+        onclick="sayHi()" >
+    </div>
+    <hr style="color: aliceblue;">
+    <div>
+        <img src="/pic_for_tomkai/Amiya.webp" alt="" style="width: 200px;">
+    </div>
+    <hr style="color: aliceblue;">
+    <div class="dropdown">
+    <button class="dropbtn" onclick="gotoPage('operator.html')" >Skill</button>
+     <div class="dropdown-content">
+                    <a href="/operator/skill1">skill1</a>
+                    <a href="/operator/skill2">skill2</a>
+                    <a href="/operator/skill3">skill3</a>
+                </div>
+    </div>
+    <hr style="color: aliceblue;">
+<div style="padding-left: 210px;">
+    <h1>this is paragraph an details for this operator</h1>
+   
+</div>
+ <hr style="color: aliceblue;">
 
 </body>
 </html>
